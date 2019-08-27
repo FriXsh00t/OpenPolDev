@@ -17,9 +17,9 @@
                Stretch="UniformToFill" />
 
                 <StackPanel Margin="0,12">
-                    <TextBlock Text="VanArsdel Inventory Sample"/>
+                    <TextBlock Text="OpenPol"/>
                     <TextBlock Text="{x:Bind ViewModel.Version}" />
-                    <TextBlock><Hyperlink NavigateUri="https://github.com/Microsoft/InventorySample">https://github.com/Microsoft/InventorySample</Hyperlink></TextBlock>
+                    <TextBlock><Hyperlink NavigateUri="https://https://github.com/openpol-org/OpenPol/">https://https://github.com/openpol-org/OpenPol</Hyperlink></TextBlock>
                 </StackPanel>
 
                 <StackPanel Margin="0,12,0,0">
