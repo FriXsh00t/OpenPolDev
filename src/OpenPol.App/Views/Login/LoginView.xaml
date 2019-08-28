@@ -35,7 +35,7 @@
                                                    Visibility="{x:Bind ViewModel.IsLoginWithPassword, Mode=OneWay}"
                                                    IsEnabled="{x:Bind ViewModel.IsBusy, Converter={StaticResource BoolNegationConverter}}" />
 
-                        <views:WindowsHelloControl x:Name="helloView" HorizontalAlignment="Center"
+                        <views:WindowsHelloControl x:Uid="Login.Password" x:Name="helloView" HorizontalAlignment="Center"
                                                    UserName="{x:Bind ViewModel.UserName, Mode=OneWay}"
                                                    LoginWithWindowHelloCommand="{x:Bind ViewModel.LoginWithWindowHelloCommand}"
                                                    Visibility="{x:Bind ViewModel.IsLoginWithWindowsHello, Mode=OneWay}"

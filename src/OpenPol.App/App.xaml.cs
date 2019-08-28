@@ -21,6 +21,8 @@ using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using OpenPol.Services;
 using OpenPol.Views.SplashScreen;
+using Windows.Globalization;
+using Windows.System.UserProfile;
 
 namespace OpenPol
 {
@@ -32,6 +34,8 @@ namespace OpenPol
 
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             ApplicationView.PreferredLaunchViewSize = new Size(1280, 840);
+
+            ApplicationLanguages.PrimaryLanguageOverride = GlobalizationPreferences.Languages[0];
 
             this.Suspending += OnSuspending;
             this.UnhandledException += OnUnhandledException;

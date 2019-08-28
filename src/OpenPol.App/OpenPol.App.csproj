@@ -22,7 +22,7 @@
     <PackageCertificateThumbprint>6C4B11DCE8F5B3CC4D3D75B0686C63E480DE7420</PackageCertificateThumbprint>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundle>Auto</AppxBundle>
-    <AppxBundlePlatforms>x86|x64</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <GenerateAppInstallerFile>True</GenerateAppInstallerFile>
     <GenerateTestArtifacts>True</GenerateTestArtifacts>
     <AppInstallerUri>\\server\red\Aplicaciones AutoActualizables\UWP\OpenPol</AppInstallerUri>
@@ -678,8 +678,15 @@
       <Name>OpenPol.ViewModels</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="firma_2019.pfx" />
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\es-ES\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\ca-ES-VALENCIA\Resources.resw" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

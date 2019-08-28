@@ -29,7 +29,7 @@
         </DataTemplate>
     </UserControl.Resources>
 
-    <controls:DataGrid ItemsSource="{x:Bind ViewModel.Items, Mode=OneWay}"
+    <controls:DataGrid x:Uid="ProductsList-NewProduct" ItemsSource="{x:Bind ViewModel.Items, Mode=OneWay}"
                        NewLabel="New Product"
                        SelectedItem="{x:Bind ViewModel.SelectedItem, Mode=TwoWay}"
                        ItemTemplate="{StaticResource ItemTemplate}"
