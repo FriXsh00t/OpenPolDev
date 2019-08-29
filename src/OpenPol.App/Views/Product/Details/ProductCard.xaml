@@ -22,7 +22,7 @@
                         Visibility="{x:Bind ViewModel.IsEditMode, Mode=OneWay}">
                         <Grid>
                             <Rectangle Fill="White" Opacity="0.75" />
-                            <TextBlock Text="Edit Photo" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{x:Bind ViewModel.IsEnabled, Mode=OneWay}" />
+                            <TextBlock x:Uid="Views-Product-Details-ProductCardxaml-EditPhoto" Text="Edit Photo" FontSize="14" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="{x:Bind ViewModel.IsEnabled, Mode=OneWay}" />
                             <Image Source="{x:Bind ViewModel.NewPictureSource, Mode=OneWay, Converter={StaticResource ObjectToImageConverter}}" 
                                Stretch="UniformToFill" 
                                HorizontalAlignment="Center" 
@@ -37,12 +37,11 @@
             </StackPanel>
 
             <Rectangle Style="{StaticResource CardSeparator}"/>
-            <TextBlock Style="{StaticResource CardSection}" Text="General" />
-
-            <TextBlock Style="{StaticResource CardHeader}" Text="Product ID" />
+            <TextBlock x:Uid="Views-Product-Details-ProductCardxaml-General" Style="{StaticResource CardSection}" Text="General" />
+            <TextBlock x:Uid="Views-Product-Details-ProductCardxaml-ProductID" Style="{StaticResource CardHeader}" Text="Product ID" />
             <TextBlock Style="{StaticResource CardText}" Text="{x:Bind Item.ProductID, Mode=OneWay}" />
 
-            <TextBlock Style="{StaticResource CardHeader}" Text="Category" />
+            <TextBlock x:Uid="Views-Product-Details-ProductCardxaml-Category" Style="{StaticResource CardHeader}" Text="Category" />
             <TextBlock Style="{StaticResource CardText}" Text="{x:Bind Item.CategoryName, Mode=OneWay}" />
 
             <TextBlock Style="{StaticResource CardHeader}" Text="Created On" />

@@ -117,13 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Controls-DataGrid-DataGridxaml-Loading" xml:space="preserve">
+    <value>Cargando...</value>
+  </data>
+  <data name="Controls-DataGrid-DataGridxaml-NoItemsFound" xml:space="preserve">
+    <value>No se han encontrado artículos.</value>
+  </data>
+  <data name="Controls-DataList-DataListxaml-Loading" xml:space="preserve">
+    <value>Cargando...</value>
+  </data>
+  <data name="Controls-DataList-DataListxaml-NoItemsFound" xml:space="preserve">
+    <value>No se han encontrado artículos.</value>
+  </data>
   <data name="LoginPassword.PlaceholderText" xml:space="preserve">
     <value>Contraseña</value>
   </data>
   <data name="LoginUserName.PlaceholderText" xml:space="preserve">
     <value>Nombre de usuario</value>
   </data>
-  <data name="ProductsList-NewProduct.NewLabel" xml:space="preserve">
+  <data name="Package-appxmanifest-Application-Description" xml:space="preserve">
+    <value>OpenPol Aplicación para Windows 10</value>
+  </data>
+  <data name="Package-appxmanifest-Application-DisplayName" xml:space="preserve">
+    <value>OpenPol App</value>
+  </data>
+  <data name="Package-appxmanifest-Application-EntryPoint" xml:space="preserve">
+    <value>OpenPol.App</value>
+  </data>
+  <data name="Package-appxmanifest-Declaration-DisplayName" xml:space="preserve">
+    <value>OpenPol</value>
+  </data>
+  <data name="Views-Product-Details-ProductCardxaml-Category.Text" xml:space="preserve">
+    <value>Categoría</value>
+  </data>
+  <data name="Views-Product-Details-ProductCardxaml-EditPhoto.Text" xml:space="preserve">
+    <value>Editar foto</value>
+  </data>
+  <data name="Views-Product-Details-ProductCardxaml-General.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Views-Product-Details-ProductCardxaml-ProductID.Text" xml:space="preserve">
+    <value>Product ID</value>
+  </data>
+  <data name="Views-Products-List-ProductsListxaml-NewProduct" xml:space="preserve">
     <value>Nuevo Artículo</value>
   </data>
 </root>

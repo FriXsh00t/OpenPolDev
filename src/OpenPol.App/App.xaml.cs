@@ -35,7 +35,7 @@ namespace OpenPol
             ApplicationView.PreferredLaunchWindowingMode = ApplicationViewWindowingMode.PreferredLaunchViewSize;
             ApplicationView.PreferredLaunchViewSize = new Size(1280, 840);
 
-            ApplicationLanguages.PrimaryLanguageOverride = GlobalizationPreferences.Languages[0];
+            ApplicationLanguages.PrimaryLanguageOverride = GlobalizationPreferences.Languages[1];
 
             this.Suspending += OnSuspending;
             this.UnhandledException += OnUnhandledException;

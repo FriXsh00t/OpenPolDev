@@ -271,6 +271,7 @@ namespace OpenPol.Controls
         public static readonly DependencyProperty SelectRangesCommandProperty = DependencyProperty.Register(nameof(SelectRangesCommand), typeof(ICommand), typeof(DataList), new PropertyMetadata(null));
         #endregion
 
+        private Windows.ApplicationModel.Resources.ResourceLoader ResourceLoader = Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView();
 
         public ListToolbarMode ToolbarMode => IsMultipleSelection ? (SelectedItemsCount > 0 ? ListToolbarMode.CancelDelete : ListToolbarMode.Cancel) : ListToolbarMode.Default;
         static DependencyExpression ToolbarModeExpression = DependencyExpressions.Register(nameof(ToolbarMode), nameof(IsMultipleSelection), nameof(SelectedItemsCount));
@@ -287,7 +288,7 @@ namespace OpenPol.Controls
         public bool IsDataUnavailable => !IsDataAvailable;
         static DependencyExpression IsDataUnavailableExpression = DependencyExpressions.Register(nameof(IsDataUnavailable), nameof(IsDataAvailable));
 
-        public string DataUnavailableMessage => ItemsSource == null ? "Loading..." : "No items found.";
+        public string DataUnavailableMessage => ItemsSource == null ? ResourceLoader.GetString("Controls-DataList-DataListxaml-Loading") : ResourceLoader.GetString("Controls-DataList-DataListxaml-NoItemsFound");
         static DependencyExpression DataUnavailableMessageExpression = DependencyExpressions.Register(nameof(DataUnavailableMessage), nameof(ItemsSource));
 
         private void OnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)

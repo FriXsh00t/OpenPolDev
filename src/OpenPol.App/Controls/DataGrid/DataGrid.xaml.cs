@@ -272,6 +272,7 @@ namespace OpenPol.Controls
         public static readonly DependencyProperty ItemSecondaryActionInvokedCommandProperty = DependencyProperty.Register(nameof(ItemSecondaryActionInvokedCommand), typeof(ICommand), typeof(DataGrid), new PropertyMetadata(null));
         #endregion
 
+        private Windows.ApplicationModel.Resources.ResourceLoader ResourceLoader = Windows.ApplicationModel.Resources.ResourceLoader.GetForCurrentView();
 
         public ListToolbarMode ToolbarMode => IsMultipleSelection ? (SelectedItemsCount > 0 ? ListToolbarMode.CancelDelete : ListToolbarMode.Cancel) : ListToolbarMode.Default;
         static DependencyExpression ToolbarModeExpression = DependencyExpressions.Register(nameof(ToolbarMode), nameof(IsMultipleSelection), nameof(SelectedItemsCount));
@@ -288,7 +289,7 @@ namespace OpenPol.Controls
         public bool IsDataUnavailable => !IsDataAvailable;
         static DependencyExpression IsDataUnavailableExpression = DependencyExpressions.Register(nameof(IsDataUnavailable), nameof(IsDataAvailable));
 
-        public string DataUnavailableMessage => ItemsSource == null ? "Loading..." : "No items found.";
+        public string DataUnavailableMessage => ItemsSource == null ? ResourceLoader.GetString("Controls-DataGrid-DataGridxaml-Loading") : ResourceLoader.GetString("Controls-DataGrid-DataGridxaml-NoItemsFound");
         static DependencyExpression DataUnavailableMessageExpression = DependencyExpressions.Register(nameof(DataUnavailableMessage), nameof(ItemsSource));
 
         private void OnCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
